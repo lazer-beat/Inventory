@@ -1,7 +1,5 @@
 package com.aincorp.inventory.business.flightcontrol.boundary;
 
-import javafx.scene.Parent;
-
 import javax.annotation.PostConstruct;
 
 /**

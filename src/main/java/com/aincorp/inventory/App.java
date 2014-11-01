@@ -1,8 +1,7 @@
 package com.aincorp.inventory;
 
-import com.aincorp.inventory.business.flightcontrol.boundary.SplashScreen;
+import com.aincorp.inventory.presentation.mainpage.MainPageView;
 import com.airhacks.afterburner.injection.Injector;
-import com.aincorp.inventory.presentation.followme.FollowmeView;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -13,7 +12,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- *
  * @author
  */
 public class App extends Application {
@@ -33,7 +31,7 @@ public class App extends Application {
         Injector.setConfigurationSource(customProperties::get);
 
         System.setProperty("happyEnding", " Enjoy the flight!");
-        FollowmeView appView = new FollowmeView();
+        MainPageView appView = new MainPageView();
         //Надо зделать это окно исчезающим
         //SplashScreen appView = new SplashScreen();
         Scene scene = new Scene(appView.getView());

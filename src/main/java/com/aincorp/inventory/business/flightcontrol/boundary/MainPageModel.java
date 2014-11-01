@@ -5,11 +5,11 @@ import javax.annotation.PostConstruct;
 /**
  * @author
  */
-public class Tower {
+public class MainPageModel {
 
     @PostConstruct
     public void init() {
-        System.out.println("Tower.init()");
+        System.out.println("MainPageModel.init()");
     }
 
     public String readyToTakeoff() {
