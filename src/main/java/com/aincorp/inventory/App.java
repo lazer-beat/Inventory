@@ -35,7 +35,7 @@ public class App extends Application {
         //Надо зделать это окно исчезающим
         //SplashScreen appView = new SplashScreen();
         Scene scene = new Scene(appView.getView());
-        stage.setTitle("АРМ Инвентаризации");
+        stage.setTitle("Инвентаризация");
         final String uri = getClass().getResource("app.css").toExternalForm();
         scene.getStylesheets().add(uri);
         stage.setScene(scene);

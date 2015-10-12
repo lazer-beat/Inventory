@@ -25,6 +25,8 @@
         <module name="inventory" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="inventory" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
-
