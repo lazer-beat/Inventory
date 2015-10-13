@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.layout.*?>
-<AnchorPane id="addRecordAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+
+<AnchorPane id="addRecordAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <GridPane id="addRecordGridPane" cacheShape="false" layoutX="35.0" layoutY="33.0" prefHeight="216.0" prefWidth="571.0" AnchorPane.bottomAnchor="246.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="33.0">
+      <GridPane id="addRecordGridPane" cacheShape="false" layoutX="35.0" layoutY="33.0" prefHeight="216.0" prefWidth="555.0" AnchorPane.bottomAnchor="246.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="33.0">
          <children>
-            <Label id="addRecordGroupLabel" prefHeight="17.0" prefWidth="91.0" text="Группа:" textAlignment="CENTER" GridPane.rowIndex="1" />
-            <ComboBox prefHeight="25.0" prefWidth="366.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label id="addrecordNameLabel" text="Наименование:" GridPane.rowIndex="2" />
-            <ComboBox prefHeight="25.0" prefWidth="366.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label id="addrecordAmortDayLabel" text="Срок амортизации:" GridPane.rowIndex="3" />
-            <Label id="addrecordSerialNumberLabel" text="Иннв./сер. номер:" GridPane.rowIndex="4" />
+            <Label id="addRecordGroupLabel" prefHeight="17.0" prefWidth="150.0" text="Группа:" textAlignment="CENTER" GridPane.rowIndex="1" />
+            <ComboBox prefHeight="25.0" prefWidth="365.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label id="addrecordNameLabel" prefWidth="150.0" text="Наименование:" GridPane.rowIndex="2" />
+            <ComboBox prefHeight="25.0" prefWidth="365.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label id="addrecordAmortDayLabel" prefWidth="150.0" text="Срок амортизации:" GridPane.rowIndex="3" />
+            <Label id="addrecordSerialNumberLabel" prefWidth="150.0" text="Иннв./сер. номер:" GridPane.rowIndex="4" />
             <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label id="addrecordStateLabel" text="Состояние:" GridPane.rowIndex="5" />
-            <Label id="addrecordCountLabel" text="Количество:" GridPane.rowIndex="6" />
-            <ComboBox prefHeight="25.0" prefWidth="366.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <ComboBox prefHeight="25.0" prefWidth="364.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <TextField prefHeight="25.0" prefWidth="373.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label id="addrecordStateLabel" prefWidth="150.0" text="Состояние:" GridPane.rowIndex="5" />
+            <Label id="addrecordCountLabel" prefWidth="150.0" text="Количество:" GridPane.rowIndex="6" />
+            <ComboBox prefHeight="25.0" prefWidth="365.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox prefHeight="25.0" prefWidth="365.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField prefHeight="25.0" prefWidth="355.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
          </children>
          <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="260.0" minWidth="10.0" prefWidth="127.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="487.0" minWidth="10.0" prefWidth="479.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="260.0" minWidth="10.0" prefWidth="192.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="487.0" minWidth="10.0" prefWidth="363.0" />
          </columnConstraints>
          <rowConstraints>
             <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
@@ -36,7 +41,7 @@
          </rowConstraints>
       </GridPane>
       <Label layoutX="18.0" layoutY="329.0" prefHeight="17.0" prefWidth="107.0" text="Примечания:" />
-      <HBox id="addRecordHBox" alignment="TOP_RIGHT" layoutX="18.0" layoutY="427.0" prefHeight="54.0" prefWidth="571.0">
+      <HBox id="addRecordHBox" alignment="TOP_RIGHT" layoutX="18.0" layoutY="432.0" prefHeight="54.0" prefWidth="571.0">
          <children>
             <Label id="addRecordLabel" alignment="TOP_LEFT" prefHeight="54.0" prefWidth="300.0" text="Переключение между полями клавиша Tab" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
             <Button id="addRecordSaveButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Сохранить">
@@ -44,7 +49,7 @@
                   <Insets left="25.0" right="25.0" />
                </HBox.margin>
             </Button>
-            <Button id="addRecordCancelButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="168.0" text="Отмена" />
+            <Button id="addRecordCancelButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Отмена" />
          </children>
       </HBox>
       <TextArea id="addRecordTextArea" layoutX="18.0" layoutY="346.0" prefHeight="72.0" prefWidth="571.0" />
@@ -52,6 +57,9 @@
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor>
+         <font>
+            <Font size="10.0" />
+         </font>
       </Label>
    </children>
 </AnchorPane>
