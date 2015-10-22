@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.aincorp.inventory.model.Equipment" table="equipment">
+        <id name="equipmentId" type="java.lang.Long">
+            <column name="equipment_id"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one name="equipmentGroup" class="com.aincorp.inventory.model.EquipmentGroup" fetch="select">
+            <column name="group_id" not-null="true"/>
+        </many-to-one>
+        <many-to-one name="equipmentProductName" class="com.aincorp.inventory.model.EquipmentProductName" fetch="select">
+            <column name="product_id" not-null="true"/>
+        </many-to-one>
+        <many-to-one name="equipmentSerialNumber" class="com.aincorp.inventory.model.EquipmentSerialNumber" fetch="select">
+            <column name="serial_number_id" not-null="true"/>
+        </many-to-one>
+        <many-to-one name="equipmentState" class="com.aincorp.inventory.model.EquipmentState" fetch="select">
+            <column name="state_id" not-null="true"/>
+        </many-to-one>
+        <property name="quantity" column="quantity" type="java.lang.Long"/>
+        <property name="description" column="description" type="java.lang.String"/>
+        <property name="deletedState" column="deletedState" type="java.lang.Boolean"/>
+        <property name="createDate" column="createDate" type="java.util.Date"/>
+        <property name="editDate" column="editDate" type="java.util.Date"/>
+    </class>
+</hibernate-mapping>

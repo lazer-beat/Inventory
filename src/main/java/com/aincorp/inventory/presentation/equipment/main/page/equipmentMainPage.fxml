@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="equipmentAnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="900.0" prefWidth="1600.0">
+         <center>
+            <TableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+            </TableView>
+         </center>
+         <bottom>
+            <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="1600.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <children>
+                  <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Button" />
+                  <Button layoutX="186.0" layoutY="14.0" mnemonicParsing="false" prefWidth="150.0" text="Button" />
+                  <Button layoutX="347.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Button" />
+                  <TextArea layoutX="25.0" layoutY="51.0" prefHeight="88.0" prefWidth="896.0" />
+                  <Button layoutX="25.0" layoutY="149.0" mnemonicParsing="false" prefWidth="250.0" text="Button" />
+                  <Button layoutX="284.0" layoutY="149.0" mnemonicParsing="false" prefWidth="150.0" text="Button" />
+                  <Button layoutX="1436.0" layoutY="149.0" mnemonicParsing="false" prefWidth="150.0" text="Button" />
+               </children>
+            </Pane>
+         </bottom>
+         <top>
+            <Pane maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="1600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <MenuBar maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="1600.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Файл">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Выход" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Правка">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Удалить" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="?">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="О программе" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
