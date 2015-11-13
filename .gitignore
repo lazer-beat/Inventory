@@ -1,5 +1,6 @@
 target/
 /dependency-reduced-pom.xml
 .DS_Store
-inventory-app.jar
-inventory.iml
+/inventory-app.jar
+/inventory.iml
+/.idea
